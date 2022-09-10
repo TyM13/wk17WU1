@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS `store_employee`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `store_employee` (
   `name` varchar(100) COLLATE utf8mb4_bin DEFAULT NULL,
-  `hourly_wage` int(11) DEFAULT NULL,
+  `hourly_wage` float DEFAULT NULL,
   `address` varchar(100) COLLATE utf8mb4_bin DEFAULT NULL,
   `phone_number` varchar(18) COLLATE utf8mb4_bin DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
@@ -49,7 +49,7 @@ DROP TABLE IF EXISTS `store_item`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `store_item` (
   `name` varchar(100) COLLATE utf8mb4_bin DEFAULT NULL,
-  `price` int(11) DEFAULT NULL,
+  `price` float DEFAULT NULL,
   `descrption` varchar(100) COLLATE utf8mb4_bin DEFAULT NULL,
   `current_stock` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
@@ -104,4 +104,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-09-10  9:28:05
+-- Dump completed on 2022-09-10  9:39:10
